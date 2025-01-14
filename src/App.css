@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -41,4 +42,42 @@
   color: #888;
 }
 
-/*  */
+
+/* Add in App */
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px
+}
+#restaurantmeny {
+  margin-bottom: 1rem;
+}
+/* /Add in App */
+
+/* Menu container */
+.menu-name {
+  display: flex;
+  flex-flow: row wrap;  
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.category-dessert, .category-forrett, .category-hovedrett {
+  padding: 0 1rem 2.5em 1rem;
+  box-shadow: 0 0 5px white, 0 0 10px black;
+}
+
+.category-hovedrett {
+  /* background-color: gray; */
+  box-sizing: border-box;
+}
+.category-forrett {
+  /* background-color: red; */
+  box-sizing: border-box;
+}
+.category-dessert {
+  /* background-color: green; */
+  box-sizing: border-box;
+}
+/* /Menu container */
