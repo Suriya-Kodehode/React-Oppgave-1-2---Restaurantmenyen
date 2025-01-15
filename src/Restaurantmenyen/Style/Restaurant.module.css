@@ -1,0 +1,99 @@
+
+/* Add in App */
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  #restaurantmeny {
+    margin-bottom: 1rem;
+  }
+  /* /Add in App */
+  
+  /* Menu container */
+  .menuName {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+  }
+  .menuItems {
+    border: .25rem solid white;
+    border-radius: 5px;
+    padding: 20px;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+  /* category ----------------------*/
+  .categorydessert, .categoryforrett, .categoryhovedrett {
+    padding: 0 1.5rem 2.5em 1.5rem;
+    box-shadow: 0 0 5px white, 0 0 10px black;
+    box-sizing: border-box;
+  }
+  
+  .categoryhovedrett {
+    background-color: #183317;
+  }
+  .categoryforrett {
+    background-color: #42271e;
+    
+  }
+  .categorydessert {
+    /* background-color: green; */
+    background-color: #4e253e;
+
+  }
+
+  .categoryforrett .menuName .menuItems {
+    background-color: #925945;
+    box-shadow: 0 0 10px #882f0f, 0 0 15px #8f7a71;
+    border: none;
+  }
+  .categoryforrett .menuName .menuItems h3 {
+    background-color: #5a382c;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .categoryhovedrett .menuName .menuItems {
+    background-color: #468b43;
+    box-shadow: 0 0 10px #12830e, 0 0 15px #7b8d7b;
+    border: none;
+  }
+  .categoryhovedrett .menuName .menuItems h3 {
+    background-color: #295328;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .categorydessert .menuName .menuItems {
+    background-color: #924675;
+    box-shadow: 0 0 10px #85155a, 0 0 15px #967e8d;
+    border: none;
+  }
+  .categorydessert .menuName .menuItems h3 {
+    background-color: #532843;
+    padding: 10px;
+    border-radius: 10px;
+  }
+/* /category ---------------------*/
+  /* /Menu container */
+  /* Dish */
+  #price {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-family:'IBM Plex Sans', sans-serif;
+    text-decoration: underline;
+  }
+  #igd {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  /* /Dish */
+  

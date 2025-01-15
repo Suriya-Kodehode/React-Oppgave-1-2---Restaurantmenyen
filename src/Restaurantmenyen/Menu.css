@@ -1,9 +1,0 @@
-
-.menu-items {
-    border: .25rem solid white;
-    border-radius: 5px;
-    padding: 10px;
-    flex-grow: 1;
-    max-width: calc(25% - 20px);
-    box-sizing: border-box;
-}

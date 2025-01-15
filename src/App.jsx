@@ -1,7 +1,9 @@
 
 import './App.css'
+import styles from './Restaurantmenyen/Style/Restaurant.module.css';
 
 import Menu from './Restaurantmenyen/Menu.jsx';
+
 
 
 function App() {
@@ -87,21 +89,22 @@ function App() {
     return acc
   }, {});
 
+  const categoriesOrder = ['Forrett', 'Hovedrett', 'Dessert'];
 
   return (
-    <div className='container'>
-      <h1 id='restaurantmeny'>Restaurantmeny</h1>
-      {Object.keys(menuCategory).map(kategori => (
-        <div key={kategori} className={`category-${kategori.replace(/\s/g, '').toLowerCase()}`}>
+    <div className={styles.container}>
+      <h1 id={styles.restaurantmeny}>Restaurantmeny</h1>
+      {categoriesOrder.map(kategori => (
+        menuCategory[kategori] && (
+        <div key={kategori} className={styles[`category${kategori.replace(/\s/g, '').toLowerCase()}`]}>
           <h2>{kategori}</h2>
-          <div className='menu-name'>
-            {menuCategory[kategori].map(listMeny => {
-              return (
+          <div className={styles.menuName}>
+            {menuCategory[kategori].map(listMeny => (
                 <Menu key={listMeny.id} data={listMeny}/>
-              )
-            })}
+            ))}
           </div>
         </div>
+        )
       ))}
     </div>
   )
